@@ -10,7 +10,7 @@ In this project, we aim to solve the problem of music recommendations for online
 Two datasets are used in this project, an Emotion Detection Dataset and a Spotify Music Dataset.
 ## Emotion Detection Features:
 Description: The dataset consists of 35,685 grayscale images of various faces, each one is labeled with seven emotions: happiness, sadness, anger, surprise, disgust, and fear. 
-- Dataset Source: Kaggle Emotion Detection Dataset
+- Dataset Source: Kaggle Emotion Detection Dataset : https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer/data
 - Image Size: 48x48 pixels
 - Color Scale: Grayscale
 - Number of Examples: 35,685
@@ -35,7 +35,7 @@ Data Structure:
 
 ## Spotify Music Dataset: 
 Description: This dataset consists of metadata for over 500,000 songs on Spotify's platform, which includes various features such as danceability, energy, valence, tempo, and more. 
-Dataset Source: Kaggle Spotify Music Dataset 
+Dataset Source: Kaggle Spotify Music Dataset: https://www.kaggle.com/datasets/musicblogger/spotify-music-data-to-identify-the-moods/data
 Number of Songs: Over 500,000 tracks
 Features Included: Track name, artist, album, danceability, energy, key, loudness, mode, acousticness, instrumentalness, liveness, valence, tempo, duration, time signature, and popularity.
 ## Features
