@@ -1,4 +1,4 @@
-# HelloHarmony: Enhancing Music Recommendation and Discovery with Machine Learning and Artificial Intelligence
+# HelloHarmony: Emotion-Based Music Recommendation System Using Machine Learning and Artificial Intelligence
 
 ## By Sophia Mares, Manahil Nasim
 ### University of San Diego
@@ -7,35 +7,58 @@
 In this project, we aim to solve the problem of music recommendations for online music streaming services. The goal is to help users discover new music in a stress-free manner by creating a recommendation system that suggests music based on user preferences, listening habits, and trends.
 
 ## Dataset
-The dataset used in this project is sourced from the HetRec 2011 dataset provided by GroupLens, which includes social networking, tagging, and music artist listening information from approximately 2,000 users on the Last.fm online music platform. The dataset consists of the following files:
-- `artists.dat`: Information about music artists.
-- `tags.dat`: Set of tags available in the dataset.
-- `user_artists.dat`: Artists listened to by each user with listening counts.
-- `user_taggedartists.dat` and `user_taggedartists-timestamps.dat`: Tag assignments of artists provided by users along with timestamps.
-- `user_friends.dat`: Friend relationships between users.
-
+Two datasets are used in this project, an Emotion Detection Dataset and a Spotify Music Dataset.
+## Emotion Detection Features:
+Description: The dataset consists of 35,685 grayscale images of various faces, each one is labeled with seven emotions: happiness, sadness, anger, surprise, disgust, and fear. 
+- Dataset Source: Kaggle Emotion Detection Dataset
+- Image Size: 48x48 pixels
+- Color Scale: Grayscale
+- Number of Examples: 35,685
+- Emotion Labels: Happiness, Neutral, Sadness, Anger, Surprise, Disgust, Fear
+- Data Split: Training and Test sets
 ## Features
-### User Features
-- Total listening count
-- Unique artists listened
-- Average listening count per artist
-- Number of friends
-- Peak listening hours
-- Tag diversity
-- Recency metrics
+Image Data:
+- Resolution: 48x48 pixels, grayscale.
+- Number of Images: 35,685 images.
+- Emotion Categories: Each image is labeled with one of the following seven emotions:
+- Happiness
+-Neutral
+- Sadness
+- Anger
+- Surprise
+- Disgust
+- Fear
+Data Structure:
+- Training Set: 28,709 images.
+- Test Set: 7,176 images.
+- Format: Each image is represented as a 48x48 pixel matrix, with pixel values ranging from 0 to 255.
 
-### Artist Features
-- Total listening count
-- Unique users listened
-- Average listening count per user
-- Number of tags
-- Popularity trends
-- Listener diversity
-- Most influential tags
-
-### Tag Features
-- Number of users
-- Number of artists associated with each tag
+## Spotify Music Dataset: 
+Description: This dataset consists of metadata for over 500,000 songs on Spotify's platform, which includes various features such as danceability, energy, valence, tempo, and more. 
+Dataset Source: Kaggle Spotify Music Dataset 
+Number of Songs: Over 500,000 tracks
+Features Included: Track name, artist, album, danceability, energy, key, loudness, mode, acousticness, instrumentalness, liveness, valence, tempo, duration, time signature, and popularity.
+## Features
+- Track Metadata:
+- Track Name: The title of the song.
+- Artist: The name of the artist or band.
+- Album: The album to which the song belongs.
+Audio Features:
+- Danceability: A measure of how suitable a track is for dancing. Values range from 0.0 to 1.0.
+- Energy: A measure of intensity and activity. Higher values indicate more energetic tracks.
+- Valence: Describes the musical positiveness conveyed by a track. Higher valence means more positive-sounding tracks.
+- Tempo: The speed or pace of the track, measured in beats per minute (BPM).
+- Acousticness: A measure of whether a track is acoustic. Higher values indicate more acoustic content.
+- Instrumentalness: Predicts whether a track contains no vocals. Higher values mean less vocal content.
+- Liveness: Detects the presence of an audience in the recording. Higher values indicate a live performance.
+- Loudness: The overall loudness of a track in decibels (dB).
+- Mode: Indicates the modality (major or minor) of a track, where major is 1 and minor is 0.
+- Key: The key of the track (e.g., C, D, E).
+- Time Signature: The musical time signature of the track (e.g., 4/4, 3/4).
+Popularity:
+- Popularity Score: This is a metric that represents the popularity of a track, with higher values indicating a songs higher popularity.
+Categorization:
+- Mood Classification: Songs are also grouped into various mood categories based on their valence, energy, and tempo values, which are then further used to match the detected emotion from the Emotion Detection Dataset.
 
 ## Visualizations
 Key visualizations include:
