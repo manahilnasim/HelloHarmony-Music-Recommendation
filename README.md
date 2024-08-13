@@ -39,7 +39,7 @@ Dataset Source: Kaggle Spotify Music Dataset
 Number of Songs: Over 500,000 tracks
 Features Included: Track name, artist, album, danceability, energy, key, loudness, mode, acousticness, instrumentalness, liveness, valence, tempo, duration, time signature, and popularity.
 ## Features
-- Track Metadata:
+## Track Metadata:
 - Track Name: The title of the song.
 - Artist: The name of the artist or band.
 - Album: The album to which the song belongs.
