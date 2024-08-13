@@ -60,13 +60,6 @@ Popularity:
 Categorization:
 - Mood Classification: Songs are also grouped into various mood categories based on their valence, energy, and tempo values, which are then further used to match the detected emotion from the Emotion Detection Dataset.
 
-## Visualizations
-Key visualizations include:
-- Heatmap of User-Artist Interactions
-- Bar plots of Top 10 Most Active Users and Most Popular Artists
-- Scatter Plot of User-Artist Interactions
-- Artist Growth Trends
-
 ## How to Use
 1. Clone the repository.
 2. Install the necessary libraries using `requirements.txt`.
